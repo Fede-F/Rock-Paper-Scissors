@@ -1,0 +1,83 @@
+body{
+    background-color: #383535;
+}
+
+#seleccion_all{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}  
+
+#seleccion_user{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 30px;
+}  
+
+#seleccion_pc{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 30px;
+}  
+
+#piedra_container,#papel_container,#tijeras_container{
+    display:inline-block;
+    width: fit-content;
+}
+
+
+input{
+    width: min-content;
+}
+
+#piedra:active , #papel:active ,#tijeras:active {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+
+#tablero{
+    width: auto;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    color: darkgrey;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+#resultado{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#jugador-Pc{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: darkgrey;
+    font-size: 30px;
+    height: min-content;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#jugador_txt{
+    text-align: left;
+}
+
+#pc_txt{
+    text-align: right;
+}
+
+#seleccion_user,  #seleccion_pc{
+    
+    border-radius: 1em/1em;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
+}

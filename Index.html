@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Piedra-Papel-Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="tablero">
+        <div id="resultado"></div>
+        <div id="puntaje"></div>
+    </div>
+    <div id="jugador-Pc">
+        <p id="jugador_txt">Jugador</p>
+        <p id="pc_txt">PC</p>
+    </div>
+    <div id="seleccion_all">
+        <div id="seleccion_user">
+            <div id="piedra_container">
+                <input type="image" id="piedra" src="rock_img.jpg"></input>
+            </div>
+            <div id="papel_container">
+                <input type="image" id="papel" src="paper_img.jpg"></input>
+            </div>
+            <div id="tijeras_container">
+                <input type="image" id="tijeras" src="scissors_img.jpg"></input>
+            </div>
+        </div>
+        <div id="seleccion_pc">
+            <div id="piedra_container">
+                <input type="image" id="piedra_pc" src="rock_img.jpg" disabled></input>
+            </div>
+            <div id="papel_container">
+                <input type="image" id="papel_pc" src="paper_img.jpg" disabled></input>
+            </div>
+            <div id="tijeras_container">
+                <input type="image" id="tijeras_pc" src="scissors_img.jpg" disabled></input>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Se declara siempre al final, para que pueda generarse los objetos anteriores -->
+<script src="logic.js"></script>
+
+</html>
